@@ -14,7 +14,33 @@ function getComputerChoice() {
   }
 }
 getComputerChoice();
+console.log(computerSelection);
 
 //lets ask the person to enter his choice
 let choice = prompt("I wonder what you will choose", "Rock-Paper-Scissor");
 let playerSelection = choice.toLowerCase();
+console.log(playerSelection);
+
+//lets make a function that tells us who won
+
+function round(x, y) {
+  let result;
+  if (
+    (x == "rock" && y == "scissor") ||
+    (x == "paper" && y == "rock") ||
+    (x == "scissor" && y == "paper")
+  ) {
+    return console.log((result = "Agh you won this round"));
+  } else if (x === y) {
+    return console.log((result = "A draw ? How boring!"));
+  } else if (
+    (y == "rock" && x == "scissor") ||
+    (y == "paper" && x == "rock") ||
+    (y == "scissor" && x == "paper")
+  ) {
+    return console.log((result = "Obviously i win!"));
+  } else {
+    return console.log((result = "HAHAHAHAHA you cant even enter an option"));
+  }
+}
+round(playerSelection, computerSelection);
