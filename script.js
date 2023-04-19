@@ -2,16 +2,19 @@
 let num = Math.floor(Math.random() * 3 + 1);
 console.log(num);
 //now since it works we make a function with an if else if statements
-//ps i made the computerChoice in the global scope so i can call it for the other function
-let computerChoice;
+//ps i made the computerSelection in the global scope so i can call it for the other function
+let computerSelection;
 function getComputerChoice() {
   if (num === 1) {
-    return (computerChoice = "Rock");
+    return (computerSelection = "rock");
   } else if (num === 2) {
-    return (computerChoice = "Paper");
+    return (computerSelection = "paper");
   } else {
-    return (computerChoice = "Scissor");
+    return (computerSelection = "scissor");
   }
 }
 getComputerChoice();
-console.log(computerChoice);
+
+//lets ask the person to enter his choice
+let choice = prompt("I wonder what you will choose", "Rock-Paper-Scissor");
+let playerSelection = choice.toLowerCase();
