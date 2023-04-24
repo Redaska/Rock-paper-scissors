@@ -1,3 +1,6 @@
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissor = document.querySelector("#scissors");
 //use something that will generate a random int between 1-3 each number represents a word .
 let num = Math.floor(Math.random() * 3 + 1);
 console.log(num);
