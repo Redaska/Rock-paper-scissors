@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+  flex: 1;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+#head {
+  display: flex;
+  justify-content: center;
+  background-color: #b2a0c0;
+  color: #64354f;
+  padding: 8px;
+  border: 2px solid #64354f;
+  margin: 0;
+}
+.center {
+  text-align: center;
+}
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  height: auto;
+}
+button {
+  height: 200px;
+  width: 200px;
+  color: #eedff9;
+  background-color: #64354f;
+  margin: 30px;
+  font-size: larger;
+}
+#scoreboard {
+  color: #502c6c;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #b2a0c0;
+  margin: 0;
+  padding: 16px;
+  color: #360d24;
+}
