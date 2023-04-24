@@ -45,23 +45,23 @@ function playerChoice() {
 
 function round(x, y) {
   getComputerChoice();
-  let result;
+  let result = document.querySelector("#result");
+
   if (
     (x == "rock" && y == "scissor") ||
     (x == "paper" && y == "rock") ||
     (x == "scissor" && y == "paper")
   ) {
-    result = "Agh you won this round";
+    result.textContent = "Agh you won this round";
   } else if (x === y) {
-    result = "A draw ? How boring!";
+    result.textContent = "A draw ? How boring!";
   } else if (
     (y == "rock" && x == "scissor") ||
     (y == "paper" && x == "rock") ||
     (y == "scissor" && x == "paper")
   ) {
-    result = "Obviously i win!";
+    result.textContent = "Obviously i win!";
   }
-  console.log(result);
 }
 
 //the round function is just for one round we need a game function it should be a loop of 5 rounds

@@ -48,3 +48,8 @@ button {
   padding: 16px;
   color: #360d24;
 }
+#result {
+  font-weight: bold;
+  font-size: 30px;
+  color: #360d24;
+}
