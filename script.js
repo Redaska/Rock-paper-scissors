@@ -16,6 +16,7 @@ function getComputerChoice() {
 
 //lets ask the person to enter his choice
 getComputerChoice();
+
 function playerChoice() {
   const rock = document.getElementById("rock");
   const paper = document.getElementById("paper");
@@ -43,6 +44,7 @@ function playerChoice() {
 //lets make a function that tells us who won
 
 function round(x, y) {
+  getComputerChoice();
   let result;
   if (
     (x == "rock" && y == "scissor") ||
